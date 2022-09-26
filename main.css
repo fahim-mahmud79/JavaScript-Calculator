@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+body{
+    background-color: rgba(0, 0, 0, 0.118);
+}
+
+.container{
+    max-width: 70%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid rgb(209, 118, 118);
+    padding: 8px;
+    margin-top: 80px;
+    background-color: rgba(245, 245, 220, 0.776);
+}
+
+.buttons{
+    margin-top: 1rem;
+}
+
+input{
+    padding: 4px 12px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 4px;
+
+}
+
+button{
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 8px;
+
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="input">
+        <h2>Enter Your Values:</h2>
+        <input type="number" id="numberOne" placeholder="Enter First Value">
+        <input type="number" id="numberTwo" placeholder="Here The Second One">
+    </div>
+
+
+
+    <div class="buttons">
+    <button onclick="add()">Addition + </button> 
+    <button onclick="subtract()">Subtraction - </button>
+    <button onclick="multiply()">Multiply * </button>
+    <button onclick="division()">Division % </button>
+    <button onclick="reset()">Reset</button>
+    </div>
+
+    <div class="results">
+        <h2> Results: </h2>
+        <h3 id="outcome"></h3>
+    </div>
+</div>
+
+
+
+
+<script>
+    let inputOne = document.getElementById("numberOne");
+    let inputTwo = document.getElementById("numberTwo");
+    let outCome = document.getElementById("outcome");
+
+function add() {
+    if(inputOne.value && inputTwo.value) {
+        let operation = parseInt(inputOne.value) + parseInt(inputTwo.value);
+        outCome.innerHTML += `Addition Result: ${operation} </br></br>`;
+    } else{
+        alert("ভাই থামেন, আগে সংখ্যা তো দেন..!")
+    }
+    
+}
+
+
+function subtract() {
+    if(inputOne.value && inputTwo.value) {
+        let operation = parseInt(inputOne.value) - parseInt(inputTwo.value);
+        outCome.innerHTML += `Substraction Result: ${operation} </br></br>`;
+    } else{
+        alert("ভাই থামেন, আগে সংখ্যা তো দেন..!")
+    }
+    
+}
+
+
+function multiply() {
+    if(inputOne.value && inputTwo.value) {
+        let operation = parseInt(inputOne.value) * parseInt(inputTwo.value);
+        outCome.innerHTML += `Multiplication Result: ${operation} </br></br>`;
+    } else{
+        alert("ভাই থামেন, আগে সংখ্যা তো দেন..!")
+    }
+    
+}
+
+
+function division() {
+    if(inputOne.value && inputTwo.value) {
+        let operation = parseInt(inputOne.value) / parseInt(inputTwo.value);
+        outCome.innerHTML += `Division Result: ${operation} </br></br>`;
+    } else{
+        alert("ভাই থামেন, আগে সংখ্যা তো দেন..!") 
+    }
+    
+}
+
+function reset() {
+    outCome.innerHTML = "";
+    inputOne.value = "";
+    inputTwo.value = "";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
